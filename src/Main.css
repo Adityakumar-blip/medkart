@@ -127,10 +127,6 @@
 
 @media (max-width:760px){
 
-    .header-txt{
-        padding: 0;
-        margin: 4rem;
-    }
 
     .header-txt>h2{
         color: white;
