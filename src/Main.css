@@ -8,7 +8,7 @@ body{
 }
 
 .med-navbar{
-    background-color: #6fcc9b;
+    background-color: #489b41;
 }
 
 .header{
@@ -172,6 +172,10 @@ body{
         width: 80%;
         /* padding-left: 2.6rem; */
         
+    }
+
+    .btn{
+        margin-bottom: -4rem;
     }
 }
 
