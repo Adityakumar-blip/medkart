@@ -8,54 +8,46 @@ import img3 from './images/part2.jpg'
 const Main = () => {
 
     const [userData, setUserData] = useState({
-        sender: "",
-        email: "",
-        phone: "",
-      });
-    
-      let name, value;
-      const postUserData = (event) => {
-        name = event.target.name;
-        value = event.target.value;
-    
-        setUserData({ ...userData, [name]: value });
-      };
-    
-      // connect with firebase
-      const submitData = async (event) => {
-        event.preventDefault();
-        const { sender, email, phone,  } = userData;
-    
-        if (sender && email && phone ) {
-          const res = fetch(
-            "https://medkart-c8507-default-rtdb.firebaseio.com/senderData",
-            {
+        sender:"",
+        email:"",
+        phone:""
+        });
+        
+        let name, value;
+        function postUserData(event) {
+          name = event.target.name;
+          value = event.target.value;
+      
+          setUserData({ ...userData, [name]:value })
+        }
+      
+        // connect to firebase
+        const submitData = async(event) => {
+          event.preventDefault();
+          const {sender,
+          email,
+          phone,
+          } = userData;
+          const res = await fetch(
+            'https://socialpubli-7e6a6-default-rtdb.firebaseio.com/medkart.json',{
               method: "POST",
-              headers: {
+              headers:{
                 "Content-Type": "application/json",
               },
-              body: JSON.stringify({
+              body:JSON.stringify({
                 sender,
                 email,
                 phone,
               }),
             }
-          );
-    
-          if (res) {
-            setUserData({
-              sender: "",
-              email: "",
-              phone: "",
-            });
-            alert("Data Stored");
-          } else {
-            alert("plz fill the data");
-          }
-        } else {
-          alert("plz fill the data");
-        }
-      };
+            );
+      
+            if(res) {
+              alert("Data Stored")
+            }else {
+              alert("Please fill the Data")
+            }
+        };
 
   return (
       <>
@@ -113,7 +105,7 @@ const Main = () => {
       <h2>CONTACT US</h2>
     </div>
     <div class="contact-form-wrapper">
-      <form method='POST'>
+      <form method="POST">
         <div class="form-item">
           <input type="text" name="sender" value={userData.sender} required  onChange={postUserData}/>
           <label>Name:</label>
@@ -123,7 +115,7 @@ const Main = () => {
           <label>Email:</label>
         </div>
         <div class="form-item">
-          <input type="tel" name="number" value={userData.number} onChange={postUserData} required/>
+          <input type="tel" name="phone" value={userData.phone} onChange={postUserData} required/>
           <label>Contact No:</label>
         </div>
         <button class="submit-btn" onClick={submitData}>Send</button>  
