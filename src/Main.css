@@ -165,11 +165,13 @@ body{
         display: flex;
         align-items: center;
         justify-content: center;
+        padding-left: 4rem;
     }
 
     nav>a>img{
         width: 80%;
-        padding-left: 2.6rem;
+        /* padding-left: 2.6rem; */
+        
     }
 }
 
