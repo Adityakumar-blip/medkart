@@ -26,16 +26,34 @@
 
 .header-txt>h1{
     color: #dede14;
-    font-size: 5.5rem;
-    font-family: 'Grape Nuts', sans-serif;
+    font-size: 3.8rem;
+    font-family: 'Arimo', sans-serif;
     font-weight: 700;
+    text-align: center;
    
+}
+
+.header-txt>p{
+    text-align: center;
+    font-size: 1.3rem;
+    font-weight: 500;
+}
+
+.header-txt>h3{
+    text-align: center;
 }
 
 .header-img{
     width: 100%;
     height: 100%;
 
+}
+
+.header-txt>a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
 }
 
 .btn{
@@ -104,6 +122,41 @@
 .contact-form-wrapper {
   background-color: #048d45;
   border-radius: 0 10px 10px 0;
+}
+
+
+@media (max-width:760px){
+
+    .header-txt{
+        padding: 0;
+        margin: 4rem;
+    }
+
+    .header-txt>h2{
+        color: white;
+        font-weight: 500;
+        font-size: 1.5rem;
+        font-family: 'Koulen', sans-serif;
+    }
+    
+    .header-txt>h1{
+        color: #dede14;
+        font-size: 2.7rem;
+        font-family: 'Arimo', sans-serif;
+        font-weight: 700;
+        text-align: center;
+       
+    }
+    
+    .header-txt>p{
+        text-align: center;
+        font-size: 1rem;
+        font-weight: 500;
+    }
+    
+    .header-txt>h3{
+        text-align: center;
+    }
 }
 
 @media only screen and (max-width: 800px) {
