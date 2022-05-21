@@ -65,11 +65,11 @@ const Main = () => {
 <div className="row">
     <div className="col col-md-6 col-sm-12">
         <div className="header-txt">
-        <h2>A Big Discount on <span style={{color:"#0e5736"}}>Medicines!</span></h2>
+        <h2>A Big Discount on <span style={{color:"orange"}}>Medicines!</span></h2>
         <h3>Why Choose 10%</h3>
-        <h1>When You're getting 85% Discount</h1>
+        <h1>When You're getting <span style={{color:"#dede14"}}>85%</span> Discount</h1>
         <p>Approved by Government, Doctors & also WHO-GMP Certified</p>
-        <h2>Use this <span>Code</span> & get Amazing Discount - <span style={{color:"#dede14"}}>MedKart85</span></h2>
+        <h2>Use this <span style={{color:"#dede14"}}>Code</span> & get Amazing Discount - <span style={{color:"#dede14"}}>MedKart85</span></h2>
         <a href='https://play.google.com/store/apps/details?id=com.vmobee.reactnative.medkart'><button className='btn'>Download App</button></a>
         </div>
     </div>

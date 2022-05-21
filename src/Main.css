@@ -28,7 +28,7 @@ body{
 }
 
 .header-txt>h1{
-    color: #dede14;
+    color: white;
     font-size: 3.8rem;
     font-family: 'Arimo', sans-serif;
     font-weight: 700;
@@ -131,7 +131,8 @@ body{
 @media (max-width:760px){
 
     .header-txt{
-        padding: 0;
+        padding-top: 0;
+        margin-top: 2rem;
         /* margin: 4rem; */
     }
 
@@ -143,8 +144,7 @@ body{
     }
     
     .header-txt>h1{
-        color: #dede14;
-        font-size: 2.7rem;
+        font-size: 2.2rem;
         font-family: 'Arimo', sans-serif;
         font-weight: 700;
         text-align: center;
@@ -159,6 +159,17 @@ body{
     
     .header-txt>h3{
         text-align: center;
+    }
+
+    nav>a{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    nav>a>img{
+        width: 80%;
+        padding-left: 2.6rem;
     }
 }
 
