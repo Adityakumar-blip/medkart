@@ -4,6 +4,7 @@ import './Main.css'
 import img1 from './images/header.jpg'
 import img2 from './images/part1.jpg'
 import img3 from './images/part2.jpg'
+import vb from './images/VB.png'
 
 const Main = () => {
 
@@ -69,7 +70,7 @@ const Main = () => {
         <h3>Why Choose 10%</h3>
         <h1>When You're getting <span style={{color:"#dede14"}}>85%</span> Discount</h1>
         <p>Approved by Government, Doctors & also WHO-GMP Certified</p>
-        <h2>Use this <span style={{color:"#dede14"}}>Code</span> & get Amazing Discount - <span style={{color:"#dede14"}}>MedKart85</span></h2>
+        <h2>Use this <span style={{color:"#dede14"}}>Code</span> & get Amazing Discount - <span className='med85' style={{color:"#dede14"}}><img src={vb} alt='' /></span></h2>
         <a href='https://play.google.com/store/apps/details?id=com.vmobee.reactnative.medkart'><button className='btn'>Download App</button></a>
         </div>
     </div>
