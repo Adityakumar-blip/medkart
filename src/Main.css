@@ -14,7 +14,7 @@
 
 .header-txt{
     text-align: center;
-    margin: 2.3rem;
+    margin: 2rem;
 }
 
 .header-txt>h2{
@@ -24,9 +24,28 @@
     font-family: 'Koulen', sans-serif;
 }
 
+.header-txt>.med-border{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+}
+
+.med-border{
+  border: 2px solid orange;
+  border-style: dashed;
+  height: 4rem;
+  width: 13rem;
+  border-spacing: 1rem;
+  padding: 0rem 0.9rem 0 0.9rem;
+  font-size: 2rem;
+  color: #dede14;
+
+}
+
 .header-txt>h1{
     color: white;
-    font-size: 3.8rem;
+    font-size: 3rem;
     font-family: 'Arimo', sans-serif;
     font-weight: 700;
     text-align: center;
@@ -65,9 +84,14 @@
 .med-btn{
     width: 15rem;
     height: 3rem;
-    background-color: white;
+    background-color: #dede14;
     font-weight: 500;
-    margin-top: 1rem;
+    margin-top: 1.4rem;
+}
+
+.med-btn:hover{
+    transform: scale(1.1);
+    transition: .1s ease-in-out;
 }
 
 
@@ -92,7 +116,7 @@ span{
 }
 
 .med85{
-  width: 18rem;
+  width: 15rem;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -155,12 +179,11 @@ span{
 
 
 @media (min-width:501px) and (max-width:800px){
-  .med-navbar{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
 
+  .med-border{
+    line-height: 5rem;
+    /* font-size: .1rem; */
+  }
     .header-txt{
         padding-top: 0;
         margin-top: 2rem;
@@ -228,7 +251,11 @@ span{
 }
 
 @media only screen and (max-width: 500px) {
-
+  
+  
+  .med-border{
+    line-height: 6rem;
+  }
 
   .med-navbar{
     display: flex;
@@ -406,6 +433,11 @@ textarea:valid+label {
 }
 
 @media screen and (min-width:801px) and (max-width:1000px){
+
+
+  .med-border{
+    line-height: 5rem;
+  }
   .btn{
     margin: 0;
   }

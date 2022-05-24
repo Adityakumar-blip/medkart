@@ -65,7 +65,7 @@ const Main = () => {
             <div className=" col-md-6 col-sm-12 m-0 p-0">
               <div className="header-txt">
                 <h2>
-                  A Big Discount on{" "}
+                A big savings on {" "}
                   <span style={{ color: "orange" }}>Medicines!</span>
                 </h2>
                 <h3>Why Choose 10%</h3>
@@ -75,21 +75,11 @@ const Main = () => {
                 </h1>
                 <p>Approved by Government, Doctors & also WHO-GMP Certified</p>
                 <h2>
-                  Use this <span style={{ color: "#dede14" }}>Code</span> & get
-                  Amazing Discount -{" "}
-                  <span
-                    className="med85"
-                    style={{
-                      color: "#dede14",
-                      border: "2px solid orange",
-                      borderStyle: "dashed",
-                    }}
-                  >
-                    Medkart85
-                  </span>
+                  Use this <span style={{ color: "#dede14" }}>code</span> & get Amazing Discount - <span className="med-border">Medkart85</span>
                 </h2>
+                
                 <a href="https://play.google.com/store/apps/details?id=com.vmobee.reactnative.medkart">
-                  <button className="med-btn">Download App</button>
+                <button type="button" class="btn btn-warning med-btn">Download App</button>
                 </a>
               </div>
             </div>
