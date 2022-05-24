@@ -136,6 +136,11 @@
 
 
 @media (min-width:501px) and (max-width:800px){
+  .med-navbar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
 
     .header-txt{
         padding-top: 0;
@@ -204,6 +209,14 @@
 }
 
 @media only screen and (max-width: 500px) {
+
+
+  .med-navbar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
   .contact-box {
     width: 85%;
     margin: 3rem ;
@@ -250,7 +263,7 @@ nav>a{
     align-items: center;
     justify-content: center;
     text-align: center;
-    padding-left: 3rem;
+    /* padding-left: 3rem; */
     
 }
 
