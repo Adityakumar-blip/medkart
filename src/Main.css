@@ -3,9 +3,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap');
 
-body{
-    overflow-x: hidden;
-}
 
 .med-navbar{
     background-color: #489b41;
@@ -16,8 +13,8 @@ body{
 }
 
 .header-txt{
-    text-align: left;
-    margin: 5rem;
+    text-align: center;
+    margin: 2.3rem;
 }
 
 .header-txt>h2{
@@ -64,7 +61,7 @@ body{
     height: 3rem;
     background-color: white;
     font-weight: 500;
-    margin-top: 2rem;
+    margin-top: 1rem;
 }
 
 .header-img>img{
@@ -88,7 +85,7 @@ body{
 }
 
 .med85>img{
-  width: 40%;
+  width: 30%;
   height: 100%;
 }
 
@@ -138,7 +135,7 @@ body{
 }
 
 
-@media (max-width:760px){
+@media (min-width:401px) and (max-width:800px){
 
     .header-txt{
         padding-top: 0;
@@ -154,16 +151,16 @@ body{
     }
     
     .header-txt>h1{
-        font-size: 2.2rem;
+        font-size: 2rem;
         font-family: 'Arimo', sans-serif;
         font-weight: 700;
         text-align: center;
        
     }
-    
+
     .header-txt>p{
         text-align: center;
-        font-size: 1rem;
+        font-size: 1.1rem;
         font-weight: 500;
     }
     
@@ -175,7 +172,7 @@ body{
         display: flex;
         align-items: center;
         justify-content: center;
-        padding-left: 4rem;
+        /* padding-left: 4rem; */
     }
 
     nav>a>img{
@@ -184,13 +181,10 @@ body{
         
     }
 
-    .btn{
-        margin-bottom: -4rem;
-    }
 
     .med85>img{
-      margin-top: 1rem;
-      width: 70%;
+      /* margin-top: 1rem; */
+      width: 30%;
       height: 100%;
     }
 }
@@ -214,6 +208,64 @@ body{
     width: 85%;
     margin: 3rem ;
   }
+
+  .btn{
+    margin: 0;
+  }
+
+  .header-txt{
+    padding: 2rem 2rem 5rem 2rem ;
+    /* margin-top: 2rem; */
+    /* margin: 4rem; */
+}
+
+.header-txt>h2{
+    color: white;
+    font-weight: 500;
+    font-size: 1rem;
+    font-family: 'Koulen', sans-serif;
+    padding: 0 0 0 0 ;
+}
+
+.header-txt>h1{
+    font-size: 1.8rem;
+    font-family: 'Arimo', sans-serif;
+    font-weight: 700;
+    text-align: center;
+   
+}
+
+.header-txt>p{
+    text-align: center;
+    font-size: 0.8rem;
+    font-weight: 500;
+}
+
+.header-txt>h3{
+    text-align: center;
+}
+
+nav>a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+nav>a>img{
+    width: 60%;
+    /* padding-left: 2.6rem; */
+    
+}
+
+.btn{
+    margin-bottom: -4rem;
+}
+
+.med85>img{
+  margin-top: 1rem;
+  width: 70%;
+  height: 100%;
+}
 }
 
 h2 {
@@ -313,6 +365,67 @@ textarea:valid+label {
 .submit-btn:active {
   transform: scale(1.1, 1.1);
   filter: sepia(0.5);
+}
+
+@media screen and (min-width:801px) and (max-width:1000px){
+  .btn{
+    margin: 0;
+  }
+
+  .header-txt{
+    padding: 0rem 1rem 3rem 1rem ;
+    /* margin-top: 2rem; */
+    /* margin: 4rem; */
+}
+
+.header-txt>h2{
+    color: white;
+    font-weight: 500;
+    font-size: 1rem;
+    font-family: 'Koulen', sans-serif;
+    padding: 0 0 0 0 ;
+}
+
+.header-txt>h1{
+    font-size: 1.8rem;
+    font-family: 'Arimo', sans-serif;
+    font-weight: 700;
+    text-align: center;
+   
+}
+
+.header-txt>p{
+    text-align: center;
+    font-size: 0.8rem;
+    font-weight: 500;
+}
+
+.header-txt>h3{
+    text-align: center;
+}
+
+nav>a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-left: 0rem;
+}
+
+nav>a>img{
+    width: 70%;
+    /* padding-left: 2.6rem; */
+    
+}
+
+.btn{
+    margin-bottom: -4rem;
+}
+
+.med85>img{
+  margin-top: 1rem;
+  width: 60%;
+  height: 100%;
+}
 }
 
 @media only screen and (max-width: 800px) {

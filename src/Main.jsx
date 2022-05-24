@@ -63,8 +63,8 @@ const Main = () => {
 
 <section>
 <div className="header">
-<div className="row">
-    <div className="col col-md-6 col-sm-12">
+<div className="row m-0">
+    <div className=" col-md-6 col-sm-12 m-0 p-0">
         <div className="header-txt">
         <h2>A Big Discount on <span style={{color:"orange"}}>Medicines!</span></h2>
         <h3>Why Choose 10%</h3>
