@@ -43,6 +43,12 @@
     text-align: center;
 }
 
+.header-txt>div{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .header-img{
     width: 100%;
     height: 100%;
@@ -56,13 +62,15 @@
     text-decoration: none;
 }
 
-.btn{
+.med-btn{
     width: 15rem;
     height: 3rem;
     background-color: white;
     font-weight: 500;
     margin-top: 1rem;
 }
+
+
 
 .header-img>img{
     width: 100%;
@@ -79,15 +87,26 @@
     height: 100%;
 }
 
-.med85{
-  width: 100%;
-  height: 100%;
+span{
+  height: 3rem;
 }
 
-.med85>img{
+.med85{
+  width: 18rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* .med85{
+  width: 100%;
+  height: 100%;
+} */
+
+/* .med85>img{
   width: 30%;
   height: 100%;
-}
+} */
 
 
 #contact {
