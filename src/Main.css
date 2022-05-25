@@ -94,8 +94,13 @@
     transition: .1s ease-in-out;
 }
 
+.buttons{
+  display: flex;
+  
+}
+
 .buttons>a>button{
-  margin-left: 2rem;
+  margin-left: 0rem;
 }
 
 .android{
@@ -204,7 +209,7 @@ span{
   .buttons{
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: center;
   }
 
   .buttons>a>button{
