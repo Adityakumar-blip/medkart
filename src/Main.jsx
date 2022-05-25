@@ -5,6 +5,8 @@ import img1 from "./images/header.jpg";
 import img2 from "./images/part1.jpg";
 import img3 from "./images/part2.jpg";
 import vb from "./images/VB.png";
+import {AiFillAndroid} from 'react-icons/ai'
+import {BsApple} from 'react-icons/bs'
 
 const Main = () => {
   const [userData, setUserData] = useState({
@@ -77,10 +79,16 @@ const Main = () => {
                 <h2>
                   Use this <span style={{ color: "#dede14" }}>code</span> & get Amazing Discount - <span className="med-border">Medkart85</span>
                 </h2>
-                
+
+                <div className="buttons">
                 <a href="https://play.google.com/store/apps/details?id=com.vmobee.reactnative.medkart">
-                <button type="button" class="btn btn-warning med-btn">Download App</button>
+                <button type="button" class="btn btn-warning med-btn"><AiFillAndroid className="android"/>  Download App</button>
                 </a>
+
+                <a href="https://apps.apple.com/us/app/medkart-pharmacy/id1495957793">
+                <button type="button" class="btn btn-warning med-btn"><BsApple className="apple"/>  Download App</button>
+                </a>
+                </div>
               </div>
             </div>
             <div className="col col-md-6 col-sm-12">

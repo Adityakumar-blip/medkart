@@ -94,6 +94,20 @@
     transition: .1s ease-in-out;
 }
 
+.buttons>a>button{
+  margin-left: 2rem;
+}
+
+.android{
+  font-size: 1.5rem;
+  margin-top: -0.4rem;
+}
+
+.apple{
+  font-size: 1.3rem;
+  margin-top: -0.5rem;
+}
+
 
 
 .header-img>img{
@@ -180,6 +194,23 @@ span{
 
 @media (min-width:501px) and (max-width:800px){
 
+  .med-navbar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+
+  .buttons{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .buttons>a>button{
+    margin-bottom: 1rem;
+  }
+
   .med-border{
     line-height: 5rem;
     /* font-size: .1rem; */
@@ -251,6 +282,16 @@ span{
 }
 
 @media only screen and (max-width: 500px) {
+
+  .buttons{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .buttons>a>button{
+    margin-bottom: 1rem;
+  }
   
   
   .med-border{
@@ -434,6 +475,19 @@ textarea:valid+label {
 }
 
 @media screen and (min-width:801px) and (max-width:1000px){
+
+  .med-btn{
+    width: 11rem;
+    height: 3rem;
+    background-color: #dede14;
+    font-weight: 500;
+    margin-top: 1.4rem;
+}
+
+
+  .buttons>a>button{
+    margin-left: 2rem;
+  }
 
 
   .med-border{
