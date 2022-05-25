@@ -82,7 +82,7 @@
 }
 
 .med-btn{
-    width: 15rem;
+    width: 12rem;
     height: 3rem;
     background-color: #dede14;
     font-weight: 500;
@@ -100,7 +100,7 @@
 }
 
 .buttons>a>button{
-  margin-left: 0rem;
+  margin-left: 1rem;
 }
 
 .android{
@@ -198,6 +198,10 @@ span{
 
 
 @media (min-width:501px) and (max-width:800px){
+  
+  .buttons>a>button{
+    margin-left: 0rem;
+  }
 
   .med-navbar{
     display: flex;
@@ -287,6 +291,10 @@ span{
 }
 
 @media only screen and (max-width: 500px) {
+
+  .buttons>a>button{
+    margin-left: 0rem;
+  }
 
   .buttons{
     display: flex;
